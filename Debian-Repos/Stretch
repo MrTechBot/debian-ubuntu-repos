@@ -1,0 +1,13 @@
+#------------------------------------------------------------------------------#
+#                   OFFICIAL DEBIAN REPOS                    
+#------------------------------------------------------------------------------#
+
+###### Debian Main Repos
+deb http://ftp.us.debian.org/debian/ stretch main contrib non-free 
+deb-src http://ftp.us.debian.org/debian/ stretch main contrib non-free 
+
+###### Debian Update Repos
+deb http://security.debian.org/ stretch/updates main contrib non-free 
+deb http://ftp.us.debian.org/debian/ stretch-proposed-updates main contrib non-free 
+deb-src http://security.debian.org/ stretch/updates main contrib non-free 
+deb-src http://ftp.us.debian.org/debian/ stretch-proposed-updates main contrib non-free 
