@@ -1,8 +1,8 @@
 # debian-ubuntu-repos
 Repos for Ubuntu and Debian
 
-* These are for the stable and up versions of Debian and Ubuntu 12.04 LTS and above  only.
-* We will keep these updated as ne releases are made and old ones are not longer supported.
+* These are for Debian Stable and Ubuntu LTS and above only.
+* We will keep these updated as new releases are made and old ones are no longer supported.
 
 ### Before you make changes
 Install these packages first
