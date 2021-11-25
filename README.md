@@ -1,4 +1,9 @@
-# APT (Advanced Packaging Tool)
+## DEPRECATED
+
+Please refer to the [docs site](aphive/debian-ubuntu-repos) for this information.
+
+
+## APT (Advanced Packaging Tool)
 
 APT was born out of a need for a better way to handle packages that users install on their machines.
 In the beginning one would use `.tar.gz.` but when Debian made it on the scene, it introduced `dpkg`
