@@ -2,6 +2,12 @@
 
 Debian only has three release cycles `stable`, `testing`, and `unstable`.
 
+Make sure to install these:
+
+```
+sudo apt install curl wget apt-transport-https dirmngr 
+```
+
 ## Stable
 
 The "stable" distribution contains the latest officially released distribution of Debian.
@@ -12,16 +18,14 @@ The "stable" distribution contains the latest officially released distribution o
 #------------------------------------------------------------------------------#
 
 ###### Debian Main Repos
-deb http://deb.debian.org/debian/ stable main contrib non-free
-deb-src http://deb.debian.org/debian/ stable main contrib non-free
-
-deb http://deb.debian.org/debian/ stable-updates main contrib non-free
-deb-src http://deb.debian.org/debian/ stable-updates main contrib non-free
-
-deb http://deb.debian.org/debian-security stable/updates main
-deb-src http://deb.debian.org/debian-security stable/updates main
-
+deb http://cdn-fastly.deb.debian.org/debian/ stable main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian/ stable-updates main contrib non-free
+deb http://security.debian.org/ stable/updates main contrib non-free
 deb http://ftp.debian.org/debian buster-backports main
+
+deb-src http://cdn-fastly.deb.debian.org/debian/ stable main contrib non-free
+deb-src http://cdn-fastly.deb.debian.org/debian/ stable-updates main contrib non-free
+deb-src http://security.debian.org/ stable/updates main contrib non-free
 deb-src http://ftp.debian.org/debian buster-backports main
 ```
 

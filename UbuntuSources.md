@@ -2,42 +2,44 @@
 
 We will only keep supported Releases.
 
-| Release      | Release Date   |  End of Life  |
-|--------------|:--------------:|--------------:|
-| Ubuntu 19.10 | April 18, 2019 | 01 2020       |
-| Ubuntu 19.04 | April 26, 2018 | 04 2028       |
-| Ubuntu 18.04 | April 21, 2016 | 04 2024       |
-| Ubuntu 16.04 | April 17, 2014 | 04 2022       |
-| Ubuntu 14.04 | April 25, 2019 | 04 2022       |
+Make sure to install these:
 
-## Ubuntu 19.10 Eoan Ermine
+```
+sudo apt install curl wget apt-transport-https dirmngr 
+```
 
-Will update on release.
+## Ubuntu 22.04 Jammy Jellyfish
 
-## Ubuntu 19.04 Disco Dingo
+Will be updated once released.
+
+## Ubuntu 20.04 Focal Fossa
+
+Supported until April 2030
 
 ```
 #------------------------------------------------------------------------------#
 #                            OFFICIAL UBUNTU REPOS                             #
 #------------------------------------------------------------------------------#
 
-
 ###### Ubuntu Main Repos
-deb http://us.archive.ubuntu.com/ubuntu/ disco main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
 
 ###### Ubuntu Update Repos
-deb http://us.archive.ubuntu.com/ubuntu/ disco-security main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ disco-updates main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ disco-proposed main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ disco-backports main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco-security main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco-updates main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco-proposed main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ disco-backports main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ focal-proposed main multiverse restricted universe
 ```
 
 ## Ubuntu 18.04 LTS Bionic Beaver
+
+Supported until April 2028
 
 ```
 #------------------------------------------------------------------------------#
@@ -62,6 +64,8 @@ deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted un
 
 ## Ubuntu 16.04 LTS Xenial Xerus
 
+Supported until April 2026.
+
 ```
 #------------------------------------------------------------------------------#
 #                            OFFICIAL UBUNTU REPOS                             #
@@ -85,35 +89,4 @@ deb-src http://us.archive.ubuntu.com/ubuntu/ xenial-backports main restricted un
 ###### Ubuntu Partner Repo
 deb http://archive.canonical.com/ubuntu xenial partner
 deb-src http://archive.canonical.com/ubuntu xenial partner
-```
-
-## Ubuntu 14.04 LTS Trusty Tahr
-
-```
-#------------------------------------------------------------------------------#
-#                            OFFICIAL UBUNTU REPOS                             #
-#------------------------------------------------------------------------------#
-
-
-###### Ubuntu Main Repos
-deb http://us.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse
-
-###### Ubuntu Update Repos
-deb http://us.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
-
-###### Ubuntu Partner Repo
-deb http://archive.canonical.com/ubuntu trusty partner
-deb-src http://archive.canonical.com/ubuntu trusty partner
-
-###### Ubuntu Extras Repo
-deb http://extras.ubuntu.com/ubuntu trusty main
-deb-src http://extras.ubuntu.com/ubuntu trusty main
 ```
